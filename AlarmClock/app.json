@@ -1,0 +1,10 @@
+{
+  "name": "AlarmClock",
+  "displayName": "AlarmClock",
+  "android": {
+    "package": "com.anonymous.alarmclock"
+  },
+  "ios": {
+    "bundleIdentifier": "com.anonymous.alarmclock"
+  }
+}

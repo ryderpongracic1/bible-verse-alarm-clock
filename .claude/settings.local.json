@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx react-native@latest init AlarmClock --template react-native-template-typescript --skip-install)",
+      "Bash(npx @react-native-community/cli init AlarmClock --template react-native-template-typescript --skip-install)",
+      "Bash(mkdir -p AlarmClock)",
+      "Bash(npm init -y)",
+      "Bash(npm start -- --reset-cache)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
