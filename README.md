@@ -5,8 +5,8 @@ A React Native alarm clock application with a unique dismissal mechanism: type B
 ## Current Status
 
 **Platform Status:**
-- iOS: ✅ Working
-- Android: ❌ Currently not functional (work in progress)
+- iOS: ✅ Working ~ still upgrading
+- Android: work in progress
 
 **Features Implemented:**
 - Create and manage multiple alarms
