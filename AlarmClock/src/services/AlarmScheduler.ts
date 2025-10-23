@@ -5,6 +5,7 @@ import notifee, {
   TriggerType,
 } from '@notifee/react-native';
 import {Alarm, DayOfWeek} from '../types';
+import BackgroundAudioService from './BackgroundAudioService';
 
 export class AlarmScheduler {
   static async scheduleAlarm(alarm: Alarm): Promise<void> {
@@ -97,6 +98,14 @@ export class AlarmScheduler {
       },
       trigger,
     );
+
+    // Start background audio session on iOS to maintain audio capability when backgrounded
+    try {
+      await BackgroundAudioService.start();
+    } catch (error) {
+      console.warn('Failed to start background audio session:', error);
+      // Non-critical error - alarm is still scheduled via notification
+    }
   }
 
   static async cancelAlarm(alarmId: string): Promise<void> {
@@ -110,8 +119,29 @@ export class AlarmScheduler {
   static async cancelAllAlarms(): Promise<void> {
     try {
       await notifee.cancelAllNotifications();
+
+      // Stop background audio session since no alarms are scheduled
+      try {
+        await BackgroundAudioService.stop();
+      } catch (error) {
+        console.warn('Failed to stop background audio session:', error);
+      }
     } catch (error) {
       console.error('Error canceling all alarms:', error);
+    }
+  }
+
+  /**
+   * Check if there are any active alarms scheduled
+   * This helps determine if background audio should be running
+   */
+  static async hasActiveAlarms(): Promise<boolean> {
+    try {
+      const triggers = await notifee.getTriggerNotifications();
+      return triggers.length > 0;
+    } catch (error) {
+      console.error('Error checking active alarms:', error);
+      return false;
     }
   }
 

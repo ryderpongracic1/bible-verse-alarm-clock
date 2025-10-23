@@ -15,6 +15,7 @@ import {Alarm, DAY_LABELS, toSerializableAlarm} from '../types';
 import {AlarmStorage} from '../services/AlarmStorage';
 import {AlarmScheduler} from '../services/AlarmScheduler';
 import {formatTimeAMPM} from '../utils/timeUtils';
+import BackgroundAudioService from '../services/BackgroundAudioService';
 
 type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
 
@@ -51,6 +52,20 @@ const AlarmListScreen: React.FC = () => {
     const updatedAlarm = {...alarm, enabled: !alarm.enabled};
     await AlarmStorage.saveAlarm(updatedAlarm);
     await AlarmScheduler.scheduleAlarm(updatedAlarm);
+
+    // Check if there are any remaining active alarms
+    // If not, stop background audio to conserve battery
+    if (!updatedAlarm.enabled) {
+      const hasActiveAlarms = await AlarmScheduler.hasActiveAlarms();
+      if (!hasActiveAlarms) {
+        try {
+          await BackgroundAudioService.stop();
+        } catch (error) {
+          console.warn('Failed to stop background audio:', error);
+        }
+      }
+    }
+
     loadAlarms();
   };
 
@@ -63,6 +78,18 @@ const AlarmListScreen: React.FC = () => {
         onPress: async () => {
           await AlarmScheduler.cancelAlarm(alarmId);
           await AlarmStorage.deleteAlarm(alarmId);
+
+          // Check if there are any remaining active alarms
+          // If not, stop background audio to conserve battery
+          const hasActiveAlarms = await AlarmScheduler.hasActiveAlarms();
+          if (!hasActiveAlarms) {
+            try {
+              await BackgroundAudioService.stop();
+            } catch (error) {
+              console.warn('Failed to stop background audio:', error);
+            }
+          }
+
           loadAlarms();
         },
       },

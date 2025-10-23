@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C6D9B5C355D2122317BA1F3 /* BackgroundAudioModule.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A071DF56BEF81B061117CF /* BackgroundAudioModule.m */; };
 		10e9483d00664481bf3aef97 /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 59D7C84A2EA69E9C00AE131B /* alarm.mp3 */; };
 		10e9483e00664481bf3aef98 /* alarm.caf in Resources */ = {isa = PBXBuildFile; fileRef = 59D7C84C2EA69E9C00AE131C /* alarm.caf */; };
 		10e9483f00664481bf3aef99 /* alarm_long.caf in Resources */ = {isa = PBXBuildFile; fileRef = 59D7C84D2EA69E9C00AE131D /* alarm_long.caf */; };
@@ -16,9 +17,11 @@
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
 		4F5772EA255E1E96C4C1B95A /* libPods-AlarmClock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E54B6BE7EF6731D56F34BA2B /* libPods-AlarmClock.a */; };
 		529CFD1707BD4DED9ABAB7C0 /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3966951122304590B59ABB95 /* noop-file.swift */; };
+		58119267D6F74E39B7A7D688 /* silence.wav in Resources */ = {isa = PBXBuildFile; fileRef = 87371C6FAB27C99BDE41BDE8 /* silence.wav */; };
 		7772FB88858F1E9D1A833DF4 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 8EC0472EAA1CDAFA36C997EE /* PrivacyInfo.xcprivacy */; };
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
+		C824E62F5446A9828F73031D /* BackgroundAudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7B6138AAA4667C54E8F1D6 /* BackgroundAudioManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,9 +38,12 @@
 		59D7C84B2EA6A8BE00AE131B /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
 		59D7C84C2EA69E9C00AE131C /* alarm.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = alarm.caf; path = AlarmClock/alarm.caf; sourceTree = "<group>"; };
 		59D7C84D2EA69E9C00AE131D /* alarm_long.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = alarm_long.caf; path = AlarmClock/alarm_long.caf; sourceTree = "<group>"; };
+		87371C6FAB27C99BDE41BDE8 /* silence.wav */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.wav; name = silence.wav; path = AlarmClock/silence.wav; sourceTree = "<group>"; };
+		8A7B6138AAA4667C54E8F1D6 /* BackgroundAudioManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BackgroundAudioManager.swift; path = AlarmClock/BackgroundAudioManager.swift; sourceTree = "<group>"; };
 		8EC0472EAA1CDAFA36C997EE /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = AlarmClock/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = AlarmClock/SplashScreen.storyboard; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
+		C3A071DF56BEF81B061117CF /* BackgroundAudioModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BackgroundAudioModule.m; path = AlarmClock/BackgroundAudioModule.m; sourceTree = "<group>"; };
 		CC17DCE47FCEE785FB0C6632 /* Pods-AlarmClock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarmClock.release.xcconfig"; path = "Target Support Files/Pods-AlarmClock/Pods-AlarmClock.release.xcconfig"; sourceTree = "<group>"; };
 		E54B6BE7EF6731D56F34BA2B /* libPods-AlarmClock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AlarmClock.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -73,6 +79,9 @@
 				59D7C84B2EA6A8BE00AE131B /* alarm.mp3 */,
 				59D7C84C2EA69E9C00AE131C /* alarm.caf */,
 				59D7C84D2EA69E9C00AE131D /* alarm_long.caf */,
+				87371C6FAB27C99BDE41BDE8 /* silence.wav */,
+				8A7B6138AAA4667C54E8F1D6 /* BackgroundAudioManager.swift */,
+				C3A071DF56BEF81B061117CF /* BackgroundAudioModule.m */,
 			);
 			name = AlarmClock;
 			sourceTree = "<group>";
@@ -217,6 +226,7 @@
 				10e9483d00664481bf3aef97 /* alarm.mp3 in Resources */,
 				10e9483e00664481bf3aef98 /* alarm.caf in Resources */,
 				10e9483f00664481bf3aef99 /* alarm_long.caf in Resources */,
+				58119267D6F74E39B7A7D688 /* silence.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +326,8 @@
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */,
 				529CFD1707BD4DED9ABAB7C0 /* noop-file.swift in Sources */,
+				C824E62F5446A9828F73031D /* BackgroundAudioManager.swift in Sources */,
+				0C6D9B5C355D2122317BA1F3 /* BackgroundAudioModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +342,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = AlarmClock/AlarmClock.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K5K7QS38H9;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -348,7 +361,7 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = com.anonymous.alarmclock;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryderpongracic.alarmclock;
 				PRODUCT_NAME = AlarmClock;
 				SWIFT_OBJC_BRIDGING_HEADER = "AlarmClock/AlarmClock-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -366,6 +379,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = AlarmClock/AlarmClock.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K5K7QS38H9;
 				INFOPLIST_FILE = AlarmClock/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -379,7 +393,7 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = com.anonymous.alarmclock;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryderpongracic.alarmclock;
 				PRODUCT_NAME = AlarmClock;
 				SWIFT_OBJC_BRIDGING_HEADER = "AlarmClock/AlarmClock-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

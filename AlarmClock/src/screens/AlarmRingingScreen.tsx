@@ -18,6 +18,7 @@ import {BibleApiService} from '../services/BibleApiService';
 import {TextPassage, fromSerializableAlarm} from '../types';
 import TypingChallenge from '../components/TypingChallenge';
 import SoundService from '../services/SoundService';
+import BackgroundAudioService from '../services/BackgroundAudioService';
 
 type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
 type RouteType = RouteProp<RootStackParamList, 'AlarmRinging'>;
@@ -94,6 +95,17 @@ const AlarmRingingScreen: React.FC = () => {
     } else {
       // Reschedule for next occurrence
       await AlarmScheduler.scheduleAlarm(alarm);
+    }
+
+    // Check if there are any remaining active alarms
+    // If not, stop background audio to conserve battery
+    const hasActiveAlarms = await AlarmScheduler.hasActiveAlarms();
+    if (!hasActiveAlarms) {
+      try {
+        await BackgroundAudioService.stop();
+      } catch (error) {
+        console.warn('Failed to stop background audio:', error);
+      }
     }
 
     navigation.navigate('AlarmList');
