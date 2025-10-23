@@ -6,6 +6,8 @@ import {
   StyleSheet,
   Vibration,
   Platform,
+  KeyboardAvoidingView,
+  ScrollView,
 } from 'react-native';
 import {TextPassage} from '../types/Passage';
 
@@ -86,88 +88,103 @@ const TypingChallenge: React.FC<TypingChallengeProps> = ({
   };
 
   return (
-    <View style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.title}>Type to Dismiss Alarm</Text>
-        <Text style={styles.source}>{passage.source}</Text>
-      </View>
-
-      {/* Passage display with character highlighting */}
-      <View style={styles.passageContainer}>
-        <Text style={styles.passageText}>
-          {fullText.split('').map((char, index) => (
-            <Text key={index} style={getCharacterStyle(index)}>
-              {char}
-            </Text>
-          ))}
-        </Text>
-      </View>
-
-      {/* Progress indicator */}
-      <View style={styles.progressContainer}>
-        <View style={styles.progressBar}>
-          <View
-            style={[styles.progressFill, {width: `${calculateProgress()}%`}]}
-          />
+    <KeyboardAvoidingView
+      style={styles.container}
+      behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+      keyboardVerticalOffset={Platform.OS === 'ios' ? 0 : 20}>
+      <ScrollView
+        contentContainerStyle={styles.scrollContent}
+        keyboardShouldPersistTaps="handled"
+        showsVerticalScrollIndicator={true}>
+        <View style={styles.header}>
+          <Text style={styles.title}>Type to Dismiss Alarm</Text>
+          <Text style={styles.source}>{passage.source}</Text>
         </View>
-        <Text style={styles.progressText}>
-          {typedText.length} / {fullText.length} characters
-        </Text>
-      </View>
 
-      {/* Text input */}
-      <TextInput
-        ref={inputRef}
-        style={styles.input}
-        value={typedText}
-        onChangeText={handleTextChange}
-        placeholder="Start typing here..."
-        placeholderTextColor="#666"
-        autoCorrect={false}
-        autoComplete="off"
-        autoCapitalize="none"
-        contextMenuHidden={true} // Prevent copy/paste on iOS
-        selectTextOnFocus={false}
-        multiline={false}
-        {...(Platform.OS === 'android' && {
-          importantForAutofill: 'no',
-          textContentType: 'none',
-        })}
-      />
+        {/* Passage display with character highlighting - scrollable for long verses */}
+        <ScrollView
+          style={styles.passageContainer}
+          contentContainerStyle={styles.passageContentContainer}
+          nestedScrollEnabled={true}
+          showsVerticalScrollIndicator={true}>
+          <Text style={styles.passageText}>
+            {fullText.split('').map((char, index) => (
+              <Text key={index} style={getCharacterStyle(index)}>
+                {char}
+              </Text>
+            ))}
+          </Text>
+        </ScrollView>
 
-      {/* Stats */}
-      <View style={styles.statsContainer}>
-        <View style={styles.stat}>
-          <Text style={styles.statLabel}>Progress</Text>
-          <Text style={styles.statValue}>{calculateProgress()}%</Text>
+        {/* Progress indicator */}
+        <View style={styles.progressContainer}>
+          <View style={styles.progressBar}>
+            <View
+              style={[styles.progressFill, {width: `${calculateProgress()}%`}]}
+            />
+          </View>
+          <Text style={styles.progressText}>
+            {typedText.length} / {fullText.length} characters
+          </Text>
         </View>
-        <View style={styles.stat}>
-          <Text style={styles.statLabel}>Accuracy</Text>
-          <Text style={styles.statValue}>{calculateAccuracy()}%</Text>
-        </View>
-        <View style={styles.stat}>
-          <Text style={styles.statLabel}>Mistakes</Text>
-          <Text style={styles.statValue}>{mistakes}</Text>
-        </View>
-      </View>
 
-      <View style={styles.instructionsContainer}>
-        <Text style={styles.instructions}>
-          Type the passage exactly as shown to dismiss the alarm.
-        </Text>
-        <Text style={styles.instructions}>
-          Incorrect characters will vibrate and won't be accepted.
-        </Text>
-      </View>
-    </View>
+        {/* Text input */}
+        <TextInput
+          ref={inputRef}
+          style={styles.input}
+          value={typedText}
+          onChangeText={handleTextChange}
+          placeholder="Start typing here..."
+          placeholderTextColor="#666"
+          autoCorrect={false}
+          autoComplete="off"
+          autoCapitalize="none"
+          contextMenuHidden={true} // Prevent copy/paste on iOS
+          selectTextOnFocus={false}
+          multiline={false}
+          {...(Platform.OS === 'android' && {
+            importantForAutofill: 'no',
+            textContentType: 'none',
+          })}
+        />
+
+        {/* Stats */}
+        <View style={styles.statsContainer}>
+          <View style={styles.stat}>
+            <Text style={styles.statLabel}>Progress</Text>
+            <Text style={styles.statValue}>{calculateProgress()}%</Text>
+          </View>
+          <View style={styles.stat}>
+            <Text style={styles.statLabel}>Accuracy</Text>
+            <Text style={styles.statValue}>{calculateAccuracy()}%</Text>
+          </View>
+          <View style={styles.stat}>
+            <Text style={styles.statLabel}>Mistakes</Text>
+            <Text style={styles.statValue}>{mistakes}</Text>
+          </View>
+        </View>
+
+        <View style={styles.instructionsContainer}>
+          <Text style={styles.instructions}>
+            Type the passage exactly as shown to dismiss the alarm.
+          </Text>
+          <Text style={styles.instructions}>
+            Incorrect characters will vibrate and won't be accepted.
+          </Text>
+        </View>
+      </ScrollView>
+    </KeyboardAvoidingView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 20,
     backgroundColor: '#0f0f1e',
+  },
+  scrollContent: {
+    flexGrow: 1,
+    padding: 20,
   },
   header: {
     marginBottom: 20,
@@ -187,9 +204,11 @@ const styles = StyleSheet.create({
   passageContainer: {
     backgroundColor: '#1a1a2e',
     borderRadius: 12,
-    padding: 20,
     marginBottom: 20,
-    minHeight: 120,
+    maxHeight: 250, // Allow scrolling for long verses
+  },
+  passageContentContainer: {
+    padding: 20,
   },
   passageText: {
     fontSize: 18,
@@ -261,8 +280,8 @@ const styles = StyleSheet.create({
     color: '#2196F3',
   },
   instructionsContainer: {
-    marginTop: 'auto',
     paddingTop: 20,
+    paddingBottom: 20,
   },
   instructions: {
     fontSize: 12,
