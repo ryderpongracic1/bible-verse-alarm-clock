@@ -31,7 +31,7 @@ A React Native alarm clock application with a unique dismissal mechanism: type B
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/ryderpongracic1/bible-verse-alarm-clock
 cd alarm
 ```
 
