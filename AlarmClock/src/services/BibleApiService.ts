@@ -6,6 +6,8 @@ import {
   PRESET_PASSAGES,
 } from '../types/Passage';
 import {config} from '../config/config';
+import {SettingsStorage} from './SettingsStorage';
+import FAMOUS_VERSES from '../data/famousVerses.json';
 
 const BASE_URL = config.BIBLE_API_BASE_URL;
 const API_KEY = config.BIBLE_API_KEY;
@@ -216,41 +218,92 @@ export class BibleApiService {
 
   /**
    * Get a random passage (no difficulty levels)
+   * Respects user settings for famous verses and book selection
    */
   static async getRandomPassage(): Promise<TextPassage | null> {
-    // Try up to 3 times to get a truly random passage from any book
-    const maxAttempts = 3;
-    for (let attempt = 1; attempt <= maxAttempts; attempt++) {
-      try {
-        console.log(`Attempting to fetch random passage (attempt ${attempt}/${maxAttempts})`);
-        const randomPassage = await this.getRandomPassageFromBible();
-        if (randomPassage) {
-          console.log('Successfully fetched random passage from Bible');
-          return randomPassage;
-        }
-      } catch (error) {
-        console.error(`Attempt ${attempt} failed:`, error);
+    try {
+      // Check user settings
+      const settings = await SettingsStorage.getSettings();
+
+      // If using famous verses mode, get a random famous verse
+      if (settings.useFamousVerses) {
+        console.log('Using famous verses mode');
+        return this.getFamousVerse();
       }
+
+      // Try up to 3 times to get a random passage from Bible (respecting book selection)
+      const maxAttempts = 3;
+      for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+        try {
+          console.log(`Attempting to fetch random passage (attempt ${attempt}/${maxAttempts})`);
+          const randomPassage = await this.getRandomPassageFromBible(settings.selectedBooks);
+          if (randomPassage) {
+            console.log('Successfully fetched random passage from Bible');
+            return randomPassage;
+          }
+        } catch (error) {
+          console.error(`Attempt ${attempt} failed:`, error);
+        }
+      }
+
+      // Fallback to a preset passage if all random attempts fail
+      console.log('All random attempts failed, using preset passage as fallback');
+      const allPresets = [
+        ...PRESET_PASSAGES[PassageDifficulty.Easy],
+        ...PRESET_PASSAGES[PassageDifficulty.Medium],
+        ...PRESET_PASSAGES[PassageDifficulty.Hard],
+      ];
+      const randomConfig = allPresets[Math.floor(Math.random() * allPresets.length)];
+
+      return this.getPassageFromConfig(randomConfig);
+    } catch (error) {
+      console.error('Error in getRandomPassage:', error);
+      // Fallback to famous verse if settings fail
+      return this.getFamousVerse();
     }
+  }
 
-    // Fallback to a preset passage if all random attempts fail
-    console.log('All random attempts failed, using preset passage as fallback');
-    const allPresets = [
-      ...PRESET_PASSAGES[PassageDifficulty.Easy],
-      ...PRESET_PASSAGES[PassageDifficulty.Medium],
-      ...PRESET_PASSAGES[PassageDifficulty.Hard],
-    ];
-    const randomConfig = allPresets[Math.floor(Math.random() * allPresets.length)];
+  /**
+   * Get a random verse from the famous verses collection
+   */
+  static getFamousVerse(): TextPassage {
+    const randomIndex = Math.floor(Math.random() * FAMOUS_VERSES.length);
+    const verse = FAMOUS_VERSES[randomIndex];
 
-    return this.getPassageFromConfig(randomConfig);
+    return {
+      id: `famous_${randomIndex}`,
+      text: verse.text,
+      source: `${verse.reference} (KJV)`,
+      shortReference: verse.reference,
+      length: verse.text.length,
+    };
   }
 
   /**
    * Get a truly random passage from anywhere in the Bible
+   * @param selectedBooks Array of book API IDs to filter by
    */
-  private static async getRandomPassageFromBible(): Promise<TextPassage | null> {
-    // Randomly select a book
-    const randomBook = BIBLE_BOOKS[Math.floor(Math.random() * BIBLE_BOOKS.length)];
+  private static async getRandomPassageFromBible(selectedBooks: string[] = []): Promise<TextPassage | null> {
+    // Filter books based on user selection
+    let availableBooks = BIBLE_BOOKS;
+
+    // If books are selected, filter to only those books
+    if (selectedBooks.length > 0) {
+      availableBooks = BIBLE_BOOKS.filter(book => selectedBooks.includes(book.usfm));
+      console.log(`Filtering to ${availableBooks.length} selected books`);
+    } else {
+      // Safety fallback: if somehow no books selected, use all books
+      console.warn('No books selected, using all books as fallback');
+    }
+
+    // Final safety check
+    if (availableBooks.length === 0) {
+      console.warn('No available books after filtering, using all books');
+      availableBooks = BIBLE_BOOKS;
+    }
+
+    // Randomly select a book from available books
+    const randomBook = availableBooks[Math.floor(Math.random() * availableBooks.length)];
 
     // Randomly select a chapter
     const randomChapter = Math.floor(Math.random() * randomBook.chapters) + 1;

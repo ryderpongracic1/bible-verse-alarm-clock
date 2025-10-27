@@ -5,6 +5,7 @@ export type RootStackParamList = {
   AlarmList: undefined;
   EditAlarm: {alarm?: SerializableAlarm};
   AlarmRinging: {alarm: SerializableAlarm};
+  Settings: undefined;
 };
 
 declare global {

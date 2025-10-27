@@ -148,6 +148,11 @@ const AlarmListScreen: React.FC = () => {
         }
       />
       <TouchableOpacity
+        style={styles.settingsButton}
+        onPress={() => navigation.navigate('Settings')}>
+        <Text style={styles.settingsButtonText}>⚙</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
         style={styles.addButton}
         onPress={() => navigation.navigate('EditAlarm', {})}>
         <Text style={styles.addButtonText}>+</Text>
@@ -191,6 +196,26 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#888',
     marginTop: 4,
+  },
+  settingsButton: {
+    position: 'absolute',
+    bottom: 100,
+    right: 24,
+    width: 56,
+    height: 56,
+    borderRadius: 28,
+    backgroundColor: '#4a4a5e',
+    justifyContent: 'center',
+    alignItems: 'center',
+    elevation: 5,
+    shadowColor: '#000',
+    shadowOffset: {width: 0, height: 2},
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+  },
+  settingsButtonText: {
+    fontSize: 28,
+    color: '#fff',
   },
   addButton: {
     position: 'absolute',

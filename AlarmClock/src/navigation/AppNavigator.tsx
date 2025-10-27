@@ -9,6 +9,7 @@ import {SerializableAlarm} from '../types';
 import AlarmListScreen from '../screens/AlarmListScreen';
 import EditAlarmScreen from '../screens/EditAlarmScreen';
 import AlarmRingingScreen from '../screens/AlarmRingingScreen';
+import SettingsScreen from '../screens/SettingsScreen';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -91,6 +92,14 @@ const AppNavigator: React.FC = () => {
             title: 'Alarm',
             headerShown: false,
             presentation: 'fullScreenModal',
+          }}
+        />
+        <Stack.Screen
+          name="Settings"
+          component={SettingsScreen}
+          options={{
+            title: 'Settings',
+            headerShown: false,
           }}
         />
       </Stack.Navigator>

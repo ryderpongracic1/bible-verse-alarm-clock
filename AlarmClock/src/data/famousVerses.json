@@ -1,0 +1,746 @@
+[
+  {
+    "reference": "John 3:16",
+    "text": "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.",
+    "apiId": "JHN.3.16",
+    "book": "John",
+    "chapter": 3,
+    "verse": 16
+  },
+  {
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd; I shall not want.",
+    "apiId": "PSA.23.1",
+    "book": "Psalms",
+    "chapter": 23,
+    "verse": 1
+  },
+  {
+    "reference": "Romans 8:28",
+    "text": "And we know that all things work together for good to them that love God, to them who are the called according to his purpose.",
+    "apiId": "ROM.8.28",
+    "book": "Romans",
+    "chapter": 8,
+    "verse": 28
+  },
+  {
+    "reference": "Philippians 4:13",
+    "text": "I can do all things through Christ which strengtheneth me.",
+    "apiId": "PHP.4.13",
+    "book": "Philippians",
+    "chapter": 4,
+    "verse": 13
+  },
+  {
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.",
+    "apiId": "PRO.3.5-PRO.3.6",
+    "book": "Proverbs",
+    "chapter": 3,
+    "verse": 5
+  },
+  {
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the thoughts that I think toward you, saith the LORD, thoughts of peace, and not of evil, to give you an expected end.",
+    "apiId": "JER.29.11",
+    "book": "Jeremiah",
+    "chapter": 29,
+    "verse": 11
+  },
+  {
+    "reference": "Matthew 6:33",
+    "text": "But seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you.",
+    "apiId": "MAT.6.33",
+    "book": "Matthew",
+    "chapter": 6,
+    "verse": 33
+  },
+  {
+    "reference": "Joshua 1:9",
+    "text": "Have not I commanded thee? Be strong and of a good courage; be not afraid, neither be thou dismayed: for the LORD thy God is with thee whithersoever thou goest.",
+    "apiId": "JOS.1.9",
+    "book": "Joshua",
+    "chapter": 1,
+    "verse": 9
+  },
+  {
+    "reference": "Psalm 46:1",
+    "text": "God is our refuge and strength, a very present help in trouble.",
+    "apiId": "PSA.46.1",
+    "book": "Psalms",
+    "chapter": 46,
+    "verse": 1
+  },
+  {
+    "reference": "Isaiah 40:31",
+    "text": "But they that wait upon the LORD shall renew their strength; they shall mount up with wings as eagles; they shall run, and not be weary; and they shall walk, and not faint.",
+    "apiId": "ISA.40.31",
+    "book": "Isaiah",
+    "chapter": 40,
+    "verse": 31
+  },
+  {
+    "reference": "Matthew 11:28",
+    "text": "Come unto me, all ye that labour and are heavy laden, and I will give you rest.",
+    "apiId": "MAT.11.28",
+    "book": "Matthew",
+    "chapter": 11,
+    "verse": 28
+  },
+  {
+    "reference": "Romans 12:2",
+    "text": "And be not conformed to this world: but be ye transformed by the renewing of your mind, that ye may prove what is that good, and acceptable, and perfect, will of God.",
+    "apiId": "ROM.12.2",
+    "book": "Romans",
+    "chapter": 12,
+    "verse": 2
+  },
+  {
+    "reference": "Ephesians 2:8-9",
+    "text": "For by grace are ye saved through faith; and that not of yourselves: it is the gift of God: Not of works, lest any man should boast.",
+    "apiId": "EPH.2.8-EPH.2.9",
+    "book": "Ephesians",
+    "chapter": 2,
+    "verse": 8
+  },
+  {
+    "reference": "2 Timothy 1:7",
+    "text": "For God hath not given us the spirit of fear; but of power, and of love, and of a sound mind.",
+    "apiId": "2TI.1.7",
+    "book": "2 Timothy",
+    "chapter": 1,
+    "verse": 7
+  },
+  {
+    "reference": "Psalm 119:105",
+    "text": "Thy word is a lamp unto my feet, and a light unto my path.",
+    "apiId": "PSA.119.105",
+    "book": "Psalms",
+    "chapter": 119,
+    "verse": 105
+  },
+  {
+    "reference": "1 Corinthians 13:4-5",
+    "text": "Charity suffereth long, and is kind; charity envieth not; charity vaunteth not itself, is not puffed up, Doth not behave itself unseemly, seeketh not her own, is not easily provoked, thinketh no evil;",
+    "apiId": "1CO.13.4-1CO.13.5",
+    "book": "1 Corinthians",
+    "chapter": 13,
+    "verse": 4
+  },
+  {
+    "reference": "James 1:2-3",
+    "text": "My brethren, count it all joy when ye fall into divers temptations; Knowing this, that the trying of your faith worketh patience.",
+    "apiId": "JAS.1.2-JAS.1.3",
+    "book": "James",
+    "chapter": 1,
+    "verse": 2
+  },
+  {
+    "reference": "Hebrews 11:1",
+    "text": "Now faith is the substance of things hoped for, the evidence of things not seen.",
+    "apiId": "HEB.11.1",
+    "book": "Hebrews",
+    "chapter": 11,
+    "verse": 1
+  },
+  {
+    "reference": "1 John 4:19",
+    "text": "We love him, because he first loved us.",
+    "apiId": "1JN.4.19",
+    "book": "1 John",
+    "chapter": 4,
+    "verse": 19
+  },
+  {
+    "reference": "Galatians 5:22-23",
+    "text": "But the fruit of the Spirit is love, joy, peace, longsuffering, gentleness, goodness, faith, Meekness, temperance: against such there is no law.",
+    "apiId": "GAL.5.22-GAL.5.23",
+    "book": "Galatians",
+    "chapter": 5,
+    "verse": 22
+  },
+  {
+    "reference": "Genesis 1:1",
+    "text": "In the beginning God created the heaven and the earth.",
+    "apiId": "GEN.1.1",
+    "book": "Genesis",
+    "chapter": 1,
+    "verse": 1
+  },
+  {
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation; whom shall I fear? the LORD is the strength of my life; of whom shall I be afraid?",
+    "apiId": "PSA.27.1",
+    "book": "Psalms",
+    "chapter": 27,
+    "verse": 1
+  },
+  {
+    "reference": "Isaiah 41:10",
+    "text": "Fear thou not; for I am with thee: be not dismayed; for I am thy God: I will strengthen thee; yea, I will help thee; yea, I will uphold thee with the right hand of my righteousness.",
+    "apiId": "ISA.41.10",
+    "book": "Isaiah",
+    "chapter": 41,
+    "verse": 10
+  },
+  {
+    "reference": "Matthew 5:16",
+    "text": "Let your light so shine before men, that they may see your good works, and glorify your Father which is in heaven.",
+    "apiId": "MAT.5.16",
+    "book": "Matthew",
+    "chapter": 5,
+    "verse": 16
+  },
+  {
+    "reference": "John 14:6",
+    "text": "Jesus saith unto him, I am the way, the truth, and the life: no man cometh unto the Father, but by me.",
+    "apiId": "JHN.14.6",
+    "book": "John",
+    "chapter": 14,
+    "verse": 6
+  },
+  {
+    "reference": "Romans 5:8",
+    "text": "But God commendeth his love toward us, in that, while we were yet sinners, Christ died for us.",
+    "apiId": "ROM.5.8",
+    "book": "Romans",
+    "chapter": 5,
+    "verse": 8
+  },
+  {
+    "reference": "Ephesians 6:10",
+    "text": "Finally, my brethren, be strong in the Lord, and in the power of his might.",
+    "apiId": "EPH.6.10",
+    "book": "Ephesians",
+    "chapter": 6,
+    "verse": 10
+  },
+  {
+    "reference": "Colossians 3:23",
+    "text": "And whatsoever ye do, do it heartily, as to the Lord, and not unto men;",
+    "apiId": "COL.3.23",
+    "book": "Colossians",
+    "chapter": 3,
+    "verse": 23
+  },
+  {
+    "reference": "1 Peter 5:7",
+    "text": "Casting all your care upon him; for he careth for you.",
+    "apiId": "1PE.5.7",
+    "book": "1 Peter",
+    "chapter": 5,
+    "verse": 7
+  },
+  {
+    "reference": "Revelation 21:4",
+    "text": "And God shall wipe away all tears from their eyes; and there shall be no more death, neither sorrow, nor crying, neither shall there be any more pain: for the former things are passed away.",
+    "apiId": "REV.21.4",
+    "book": "Revelation",
+    "chapter": 21,
+    "verse": 4
+  },
+  {
+    "reference": "Psalm 37:4",
+    "text": "Delight thyself also in the LORD; and he shall give thee the desires of thine heart.",
+    "apiId": "PSA.37.4",
+    "book": "Psalms",
+    "chapter": 37,
+    "verse": 4
+  },
+  {
+    "reference": "Proverbs 16:3",
+    "text": "Commit thy works unto the LORD, and thy thoughts shall be established.",
+    "apiId": "PRO.16.3",
+    "book": "Proverbs",
+    "chapter": 16,
+    "verse": 3
+  },
+  {
+    "reference": "Ecclesiastes 3:1",
+    "text": "To every thing there is a season, and a time to every purpose under the heaven:",
+    "apiId": "ECC.3.1",
+    "book": "Ecclesiastes",
+    "chapter": 3,
+    "verse": 1
+  },
+  {
+    "reference": "Isaiah 53:5",
+    "text": "But he was wounded for our transgressions, he was bruised for our iniquities: the chastisement of our peace was upon him; and with his stripes we are healed.",
+    "apiId": "ISA.53.5",
+    "book": "Isaiah",
+    "chapter": 53,
+    "verse": 5
+  },
+  {
+    "reference": "Matthew 7:7",
+    "text": "Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you:",
+    "apiId": "MAT.7.7",
+    "book": "Matthew",
+    "chapter": 7,
+    "verse": 7
+  },
+  {
+    "reference": "Matthew 28:19-20",
+    "text": "Go ye therefore, and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost: Teaching them to observe all things whatsoever I have commanded you: and, lo, I am with you alway, even unto the end of the world. Amen.",
+    "apiId": "MAT.28.19-MAT.28.20",
+    "book": "Matthew",
+    "chapter": 28,
+    "verse": 19
+  },
+  {
+    "reference": "John 1:1",
+    "text": "In the beginning was the Word, and the Word was with God, and the Word was God.",
+    "apiId": "JHN.1.1",
+    "book": "John",
+    "chapter": 1,
+    "verse": 1
+  },
+  {
+    "reference": "John 10:10",
+    "text": "The thief cometh not, but for to steal, and to kill, and to destroy: I am come that they might have life, and that they might have it more abundantly.",
+    "apiId": "JHN.10.10",
+    "book": "John",
+    "chapter": 10,
+    "verse": 10
+  },
+  {
+    "reference": "Acts 1:8",
+    "text": "But ye shall receive power, after that the Holy Ghost is come upon you: and ye shall be witnesses unto me both in Jerusalem, and in all Judaea, and in Samaria, and unto the uttermost part of the earth.",
+    "apiId": "ACT.1.8",
+    "book": "Acts",
+    "chapter": 1,
+    "verse": 8
+  },
+  {
+    "reference": "Romans 3:23",
+    "text": "For all have sinned, and come short of the glory of God;",
+    "apiId": "ROM.3.23",
+    "book": "Romans",
+    "chapter": 3,
+    "verse": 23
+  },
+  {
+    "reference": "Romans 6:23",
+    "text": "For the wages of sin is death; but the gift of God is eternal life through Jesus Christ our Lord.",
+    "apiId": "ROM.6.23",
+    "book": "Romans",
+    "chapter": 6,
+    "verse": 23
+  },
+  {
+    "reference": "Romans 10:9",
+    "text": "That if thou shalt confess with thy mouth the Lord Jesus, and shalt believe in thine heart that God hath raised him from the dead, thou shalt be saved.",
+    "apiId": "ROM.10.9",
+    "book": "Romans",
+    "chapter": 10,
+    "verse": 9
+  },
+  {
+    "reference": "1 Corinthians 10:13",
+    "text": "There hath no temptation taken you but such as is common to man: but God is faithful, who will not suffer you to be tempted above that ye are able; but will with the temptation also make a way to escape, that ye may be able to bear it.",
+    "apiId": "1CO.10.13",
+    "book": "1 Corinthians",
+    "chapter": 10,
+    "verse": 13
+  },
+  {
+    "reference": "2 Corinthians 5:17",
+    "text": "Therefore if any man be in Christ, he is a new creature: old things are passed away; behold, all things are become new.",
+    "apiId": "2CO.5.17",
+    "book": "2 Corinthians",
+    "chapter": 5,
+    "verse": 17
+  },
+  {
+    "reference": "Philippians 4:6-7",
+    "text": "Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God. And the peace of God, which passeth all understanding, shall keep your hearts and minds through Christ Jesus.",
+    "apiId": "PHP.4.6-PHP.4.7",
+    "book": "Philippians",
+    "chapter": 4,
+    "verse": 6
+  },
+  {
+    "reference": "1 Thessalonians 5:16-18",
+    "text": "Rejoice evermore. Pray without ceasing. In every thing give thanks: for this is the will of God in Christ Jesus concerning you.",
+    "apiId": "1TH.5.16-1TH.5.18",
+    "book": "1 Thessalonians",
+    "chapter": 5,
+    "verse": 16
+  },
+  {
+    "reference": "Hebrews 12:1-2",
+    "text": "Wherefore seeing we also are compassed about with so great a cloud of witnesses, let us lay aside every weight, and the sin which doth so easily beset us, and let us run with patience the race that is set before us, Looking unto Jesus the author and finisher of our faith; who for the joy that was set before him endured the cross, despising the shame, and is set down at the right hand of the throne of God.",
+    "apiId": "HEB.12.1-HEB.12.2",
+    "book": "Hebrews",
+    "chapter": 12,
+    "verse": 1
+  },
+  {
+    "reference": "James 1:12",
+    "text": "Blessed is the man that endureth temptation: for when he is tried, he shall receive the crown of life, which the Lord hath promised to them that love him.",
+    "apiId": "JAS.1.12",
+    "book": "James",
+    "chapter": 1,
+    "verse": 12
+  },
+  {
+    "reference": "1 John 1:9",
+    "text": "If we confess our sins, he is faithful and just to forgive us our sins, and to cleanse us from all unrighteousness.",
+    "apiId": "1JN.1.9",
+    "book": "1 John",
+    "chapter": 1,
+    "verse": 9
+  },
+  {
+    "reference": "Exodus 20:3",
+    "text": "Thou shalt have no other gods before me.",
+    "apiId": "EXO.20.3",
+    "book": "Exodus",
+    "chapter": 20,
+    "verse": 3
+  },
+  {
+    "reference": "Deuteronomy 31:6",
+    "text": "Be strong and of a good courage, fear not, nor be afraid of them: for the LORD thy God, he it is that doth go with thee; he will not fail thee, nor forsake thee.",
+    "apiId": "DEU.31.6",
+    "book": "Deuteronomy",
+    "chapter": 31,
+    "verse": 6
+  },
+  {
+    "reference": "Psalm 1:1-2",
+    "text": "Blessed is the man that walketh not in the counsel of the ungodly, nor standeth in the way of sinners, nor sitteth in the seat of the scornful. But his delight is in the law of the LORD; and in his law doth he meditate day and night.",
+    "apiId": "PSA.1.1-PSA.1.2",
+    "book": "Psalms",
+    "chapter": 1,
+    "verse": 1
+  },
+  {
+    "reference": "Psalm 19:1",
+    "text": "The heavens declare the glory of God; and the firmament sheweth his handywork.",
+    "apiId": "PSA.19.1",
+    "book": "Psalms",
+    "chapter": 19,
+    "verse": 1
+  },
+  {
+    "reference": "Psalm 34:8",
+    "text": "O taste and see that the LORD is good: blessed is the man that trusteth in him.",
+    "apiId": "PSA.34.8",
+    "book": "Psalms",
+    "chapter": 34,
+    "verse": 8
+  },
+  {
+    "reference": "Psalm 51:10",
+    "text": "Create in me a clean heart, O God; and renew a right spirit within me.",
+    "apiId": "PSA.51.10",
+    "book": "Psalms",
+    "chapter": 51,
+    "verse": 10
+  },
+  {
+    "reference": "Psalm 91:1-2",
+    "text": "He that dwelleth in the secret place of the most High shall abide under the shadow of the Almighty. I will say of the LORD, He is my refuge and my fortress: my God; in him will I trust.",
+    "apiId": "PSA.91.1-PSA.91.2",
+    "book": "Psalms",
+    "chapter": 91,
+    "verse": 1
+  },
+  {
+    "reference": "Psalm 103:12",
+    "text": "As far as the east is from the west, so far hath he removed our transgressions from us.",
+    "apiId": "PSA.103.12",
+    "book": "Psalms",
+    "chapter": 103,
+    "verse": 12
+  },
+  {
+    "reference": "Psalm 118:24",
+    "text": "This is the day which the LORD hath made; we will rejoice and be glad in it.",
+    "apiId": "PSA.118.24",
+    "book": "Psalms",
+    "chapter": 118,
+    "verse": 24
+  },
+  {
+    "reference": "Psalm 139:14",
+    "text": "I will praise thee; for I am fearfully and wonderfully made: marvellous are thy works; and that my soul knoweth right well.",
+    "apiId": "PSA.139.14",
+    "book": "Psalms",
+    "chapter": 139,
+    "verse": 14
+  },
+  {
+    "reference": "Proverbs 1:7",
+    "text": "The fear of the LORD is the beginning of knowledge: but fools despise wisdom and instruction.",
+    "apiId": "PRO.1.7",
+    "book": "Proverbs",
+    "chapter": 1,
+    "verse": 7
+  },
+  {
+    "reference": "Proverbs 18:10",
+    "text": "The name of the LORD is a strong tower: the righteous runneth into it, and is safe.",
+    "apiId": "PRO.18.10",
+    "book": "Proverbs",
+    "chapter": 18,
+    "verse": 10
+  },
+  {
+    "reference": "Proverbs 22:6",
+    "text": "Train up a child in the way he should go: and when he is old, he will not depart from it.",
+    "apiId": "PRO.22.6",
+    "book": "Proverbs",
+    "chapter": 22,
+    "verse": 6
+  },
+  {
+    "reference": "Isaiah 9:6",
+    "text": "For unto us a child is born, unto us a son is given: and the government shall be upon his shoulder: and his name shall be called Wonderful, Counsellor, The mighty God, The everlasting Father, The Prince of Peace.",
+    "apiId": "ISA.9.6",
+    "book": "Isaiah",
+    "chapter": 9,
+    "verse": 6
+  },
+  {
+    "reference": "Isaiah 26:3",
+    "text": "Thou wilt keep him in perfect peace, whose mind is stayed on thee: because he trusteth in thee.",
+    "apiId": "ISA.26.3",
+    "book": "Isaiah",
+    "chapter": 26,
+    "verse": 3
+  },
+  {
+    "reference": "Isaiah 55:8-9",
+    "text": "For my thoughts are not your thoughts, neither are your ways my ways, saith the LORD. For as the heavens are higher than the earth, so are my ways higher than your ways, and my thoughts than your thoughts.",
+    "apiId": "ISA.55.8-ISA.55.9",
+    "book": "Isaiah",
+    "chapter": 55,
+    "verse": 8
+  },
+  {
+    "reference": "Micah 6:8",
+    "text": "He hath shewed thee, O man, what is good; and what doth the LORD require of thee, but to do justly, and to love mercy, and to walk humbly with thy God?",
+    "apiId": "MIC.6.8",
+    "book": "Micah",
+    "chapter": 6,
+    "verse": 8
+  },
+  {
+    "reference": "Matthew 5:3-4",
+    "text": "Blessed are the poor in spirit: for theirs is the kingdom of heaven. Blessed are they that mourn: for they shall be comforted.",
+    "apiId": "MAT.5.3-MAT.5.4",
+    "book": "Matthew",
+    "chapter": 5,
+    "verse": 3
+  },
+  {
+    "reference": "Matthew 5:14",
+    "text": "Ye are the light of the world. A city that is set on an hill cannot be hid.",
+    "apiId": "MAT.5.14",
+    "book": "Matthew",
+    "chapter": 5,
+    "verse": 14
+  },
+  {
+    "reference": "Matthew 6:9-10",
+    "text": "After this manner therefore pray ye: Our Father which art in heaven, Hallowed be thy name. Thy kingdom come. Thy will be done in earth, as it is in heaven.",
+    "apiId": "MAT.6.9-MAT.6.10",
+    "book": "Matthew",
+    "chapter": 6,
+    "verse": 9
+  },
+  {
+    "reference": "Matthew 22:37-39",
+    "text": "Jesus said unto him, Thou shalt love the Lord thy God with all thy heart, and with all thy soul, and with all thy mind. This is the first and great commandment. And the second is like unto it, Thou shalt love thy neighbour as thyself.",
+    "apiId": "MAT.22.37-MAT.22.39",
+    "book": "Matthew",
+    "chapter": 22,
+    "verse": 37
+  },
+  {
+    "reference": "Mark 11:24",
+    "text": "Therefore I say unto you, What things soever ye desire, when ye pray, believe that ye receive them, and ye shall have them.",
+    "apiId": "MRK.11.24",
+    "book": "Mark",
+    "chapter": 11,
+    "verse": 24
+  },
+  {
+    "reference": "Luke 6:31",
+    "text": "And as ye would that men should do to you, do ye also to them likewise.",
+    "apiId": "LUK.6.31",
+    "book": "Luke",
+    "chapter": 6,
+    "verse": 31
+  },
+  {
+    "reference": "John 8:12",
+    "text": "Then spake Jesus again unto them, saying, I am the light of the world: he that followeth me shall not walk in darkness, but shall have the light of life.",
+    "apiId": "JHN.8.12",
+    "book": "John",
+    "chapter": 8,
+    "verse": 12
+  },
+  {
+    "reference": "John 11:25",
+    "text": "Jesus said unto her, I am the resurrection, and the life: he that believeth in me, though he were dead, yet shall he live:",
+    "apiId": "JHN.11.25",
+    "book": "John",
+    "chapter": 11,
+    "verse": 25
+  },
+  {
+    "reference": "John 13:34",
+    "text": "A new commandment I give unto you, That ye love one another; as I have loved you, that ye also love one another.",
+    "apiId": "JHN.13.34",
+    "book": "John",
+    "chapter": 13,
+    "verse": 34
+  },
+  {
+    "reference": "John 15:13",
+    "text": "Greater love hath no man than this, that a man lay down his life for his friends.",
+    "apiId": "JHN.15.13",
+    "book": "John",
+    "chapter": 15,
+    "verse": 13
+  },
+  {
+    "reference": "John 16:33",
+    "text": "These things I have spoken unto you, that in me ye might have peace. In the world ye shall have tribulation: but be of good cheer; I have overcome the world.",
+    "apiId": "JHN.16.33",
+    "book": "John",
+    "chapter": 16,
+    "verse": 33
+  },
+  {
+    "reference": "Romans 1:16",
+    "text": "For I am not ashamed of the gospel of Christ: for it is the power of God unto salvation to every one that believeth; to the Jew first, and also to the Greek.",
+    "apiId": "ROM.1.16",
+    "book": "Romans",
+    "chapter": 1,
+    "verse": 16
+  },
+  {
+    "reference": "1 Corinthians 15:58",
+    "text": "Therefore, my beloved brethren, be ye stedfast, unmoveable, always abounding in the work of the Lord, forasmuch as ye know that your labour is not in vain in the Lord.",
+    "apiId": "1CO.15.58",
+    "book": "1 Corinthians",
+    "chapter": 15,
+    "verse": 58
+  },
+  {
+    "reference": "2 Corinthians 12:9",
+    "text": "And he said unto me, My grace is sufficient for thee: for my strength is made perfect in weakness. Most gladly therefore will I rather glory in my infirmities, that the power of Christ may rest upon me.",
+    "apiId": "2CO.12.9",
+    "book": "2 Corinthians",
+    "chapter": 12,
+    "verse": 9
+  },
+  {
+    "reference": "Galatians 2:20",
+    "text": "I am crucified with Christ: nevertheless I live; yet not I, but Christ liveth in me: and the life which I now live in the flesh I live by the faith of the Son of God, who loved me, and gave himself for me.",
+    "apiId": "GAL.2.20",
+    "book": "Galatians",
+    "chapter": 2,
+    "verse": 20
+  },
+  {
+    "reference": "Ephesians 2:10",
+    "text": "For we are his workmanship, created in Christ Jesus unto good works, which God hath before ordained that we should walk in them.",
+    "apiId": "EPH.2.10",
+    "book": "Ephesians",
+    "chapter": 2,
+    "verse": 10
+  },
+  {
+    "reference": "Philippians 2:3-4",
+    "text": "Let nothing be done through strife or vainglory; but in lowliness of mind let each esteem other better than themselves. Look not every man on his own things, but every man also on the things of others.",
+    "apiId": "PHP.2.3-PHP.2.4",
+    "book": "Philippians",
+    "chapter": 2,
+    "verse": 3
+  },
+  {
+    "reference": "Colossians 3:2",
+    "text": "Set your affection on things above, not on things on the earth.",
+    "apiId": "COL.3.2",
+    "book": "Colossians",
+    "chapter": 3,
+    "verse": 2
+  },
+  {
+    "reference": "1 Timothy 4:12",
+    "text": "Let no man despise thy youth; but be thou an example of the believers, in word, in conversation, in charity, in spirit, in faith, in purity.",
+    "apiId": "1TI.4.12",
+    "book": "1 Timothy",
+    "chapter": 4,
+    "verse": 12
+  },
+  {
+    "reference": "2 Timothy 3:16-17",
+    "text": "All scripture is given by inspiration of God, and is profitable for doctrine, for reproof, for correction, for instruction in righteousness: That the man of God may be perfect, throughly furnished unto all good works.",
+    "apiId": "2TI.3.16-2TI.3.17",
+    "book": "2 Timothy",
+    "chapter": 3,
+    "verse": 16
+  },
+  {
+    "reference": "Hebrews 13:5",
+    "text": "Let your conversation be without covetousness; and be content with such things as ye have: for he hath said, I will never leave thee, nor forsake thee.",
+    "apiId": "HEB.13.5",
+    "book": "Hebrews",
+    "chapter": 13,
+    "verse": 5
+  },
+  {
+    "reference": "James 4:7",
+    "text": "Submit yourselves therefore to God. Resist the devil, and he will flee from you.",
+    "apiId": "JAS.4.7",
+    "book": "James",
+    "chapter": 4,
+    "verse": 7
+  },
+  {
+    "reference": "1 Peter 3:15",
+    "text": "But sanctify the Lord God in your hearts: and be ready always to give an answer to every man that asketh you a reason of the hope that is in you with meekness and fear:",
+    "apiId": "1PE.3.15",
+    "book": "1 Peter",
+    "chapter": 3,
+    "verse": 15
+  },
+  {
+    "reference": "2 Peter 3:9",
+    "text": "The Lord is not slack concerning his promise, as some men count slackness; but is longsuffering to us-ward, not willing that any should perish, but that all should come to repentance.",
+    "apiId": "2PE.3.9",
+    "book": "2 Peter",
+    "chapter": 3,
+    "verse": 9
+  },
+  {
+    "reference": "1 John 3:1",
+    "text": "Behold, what manner of love the Father hath bestowed upon us, that we should be called the sons of God: therefore the world knoweth us not, because it knew him not.",
+    "apiId": "1JN.3.1",
+    "book": "1 John",
+    "chapter": 3,
+    "verse": 1
+  },
+  {
+    "reference": "Jude 1:24-25",
+    "text": "Now unto him that is able to keep you from falling, and to present you faultless before the presence of his glory with exceeding joy, To the only wise God our Saviour, be glory and majesty, dominion and power, both now and ever. Amen.",
+    "apiId": "JUD.1.24-JUD.1.25",
+    "book": "Jude",
+    "chapter": 1,
+    "verse": 24
+  },
+  {
+    "reference": "Revelation 3:20",
+    "text": "Behold, I stand at the door, and knock: if any man hear my voice, and open the door, I will come in to him, and will sup with him, and he with me.",
+    "apiId": "REV.3.20",
+    "book": "Revelation",
+    "chapter": 3,
+    "verse": 20
+  }
+]
